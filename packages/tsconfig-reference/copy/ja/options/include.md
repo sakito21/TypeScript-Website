@@ -8,7 +8,7 @@ oneline: "Files or patterns to include in this project"
 
 ```json
 {
-  "include": ["src/**", "tests/**"]
+  "include": ["src/**/*", "tests/**/*"]
 }
 ```
 
@@ -60,7 +60,7 @@ oneline: "Files or patterns to include in this project"
 `include`と`exclude`はグロブパターンのためのワイルドカードをサポートしています:
 
 - `*` ゼロ個以上の文字列にマッチ（ディレクトリセパレータは除く）
-- `?` 任意の1文字にマッチ（ディレクトリセパレータは除く）
+- `?` 任意の 1 文字にマッチ（ディレクトリセパレータは除く）
 - `**/` 任意階層の任意ディレクトリにマッチ
 
 グロブパターンがファイルの拡張子を含まない場合、サポートされる拡張子のみが含まれるようになります（例：`.ts`、`.tsx`と`.d.ts`はデフォルトでインクルードされ、`.js`と`.jsx`は`allowJs`が設定された場合のみインクルードされます）。
